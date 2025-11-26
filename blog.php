@@ -162,87 +162,53 @@
     <div class="container-fluid bg-primary p-5 hero-header mb-5">
         <div class="row py-5">
             <div class="col-12 text-center">
-                <h1 class="display-1 text-white animated zoomIn">Contact Us</h1>
+                <h1 class="display-1 text-white animated zoomIn">Blog</h1>
                 <a href="" class="h4 text-white">Home</a>
                 <i class="far fa-circle text-white px-2"></i>
-                <a href="" class="h4 text-white">Contact Us</a>
+                <a href="" class="h4 text-white">Blog</a>
             </div>
         </div>
     </div>
     <!-- Hero End -->
 
-        <!-- Contact Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- Featured Blog Posts Section -->
+    <section class="blog-section">
         <div class="container">
-            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-                <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contact Us</h5>
-                <h1 class="display-5 mb-0">Get in Touch With Pankaj Fruit And Vegetables</h1>
-            </div>
-            <div class="row g-5 justify-content-center align-items-center">
-                <div class="col-lg-7 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="bg-light rounded p-5">
-                        <form id="whatsappForm">
-                            <div class="row g-3">
-                                <div class="col-6">
-                                    <input type="text" id="name" class="form-control border-0 px-4"
-                                        placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-6">
-                                    <input type="email" id="email" class="form-control border-0 px-4"
-                                        placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <input type="text" id="subject" class="form-control border-0 px-4"
-                                        placeholder="Subject" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control border-0 px-4 py-3" rows="8" id="message"
-                                        placeholder="Message"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
+            <h2 class="section-title">Featured Posts</h2>
+            <div class="row g-4">
+                <div class="col-md-4 fade-in">
+                    <div class="blog-card">
+                        <img src="img/fruits.webp" alt="Fresh Fruits">
+                        <div class="blog-card-body">
+                            <h5>5 Health Benefits of Eating Fresh Fruits</h5>
+                            <p>Boost immunity, improve digestion, and enjoy delicious flavors with fresh fruits delivered to your home.</p>
+                            <a href="contact.php" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-5 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="bg-light rounded p-5">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
-                            <div class="text-start">
-                                <h5 class="mb-1">Our Warehouse</h5>
-                                <span>Plot No. 15, Nashik Agricultural Market, Maharashtra, India - 422001</span>
-                            </div>
+                <div class="col-md-4 fade-in" style="animation-delay: 0.2s;">
+                    <div class="blog-card">
+                        <img src="img/pomegranate.jpg" alt="Fresh Vegetables">
+                        <div class="blog-card-body">
+                            <h5>Top 5 Seasonal Vegetables to Include in Your Diet</h5>
+                            <p>Seasonal vegetables taste better, are more nutritious, and are perfect for your healthy meals.</p>
+                            <a href="contact.php" class="btn btn-primary btn-sm">Read More</a>
                         </div>
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
-                            <div class="text-start">
-                                <h5 class="mb-1">Email Us</h5>
-                                <span>pankajfruitsveggies@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
-                            <div class="text-start">
-                                <h5 class="mb-1">Call Us</h5>
-                                <span>+91 9876543210</span>
-                            </div>
-                        </div>
-                        <div>
-                            <iframe class="position-relative w-100"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.7014089536847!2d73.78163481528304!3d19.997453987028045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb2a6f0f8b77%3A0x7ee6e8d2f2c94bc6!2sNashik%20Agricultural%20Produce%20Market%20Committee!5e0!3m2!1sen!2sin!4v1755000000000!5m2!1sen!2sin"
-                                frameborder="0" style="height: 230px; border:0;" allowfullscreen="" aria-hidden="false"
-                                tabindex="0"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in" style="animation-delay: 0.4s;">
+                    <div class="blog-card">
+                        <img src="img/Tomato.webp" alt="Healthy Recipes">
+                        <div class="blog-card-body">
+                            <h5>Delicious Recipes Using Fresh Produce</h5>
+                            <p>From smoothies to salads to vegetable stir-fries, enjoy healthy meals every day.</p>
+                            <a href="contact.php" class="btn btn-primary btn-sm">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Contact End -->
+    </section>
 
-
-  
     <!-- footer -->
     <?php include('footer.php') ?>

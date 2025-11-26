@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Sri Krishna Traders</title>
+    <title>Pankaj Fruit And Vegetables </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="Free HTML Templates" name="keywords" />
     <meta content="Free HTML Templates" name="description" />
@@ -34,12 +34,129 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+        #header-carousel .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+
+        /* Optional: Ensure captions are vertically centered and don't overflow */
+        #header-carousel .carousel-caption {
+            height: 100%;
+            top: 0;
+            bottom: 0;
+        }
+    </style>
+
+    <style>
+        /* Card Hover Animation */
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Image Zoom on Hover */
+        .product-img-container {
+            height: 250px;
+            background-color: #f8f9fa;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-img-container:hover .product-img {
+            transform: scale(1.1);
+        }
+
+        /* Animated Button */
+        .animated-btn {
+            transition: all 0.3s ease;
+        }
+
+        .animated-btn:hover {
+            background-color: #ffffff;
+            color: #0d6efd;
+            border: 1px solid #0d6efd;
+        }
+
+        /* blog sections css */
+        .blog-section {
+            padding: 4rem 0;
+        }
+
+        .blog-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-card-body {
+            padding: 1.5rem;
+        }
+
+        .blog-card-body h5 {
+            color: #007bff;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Fade-in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
 </head>
 
 <body>
-    <!-- Header -->
+
+    <!-- header -->
     <?php include('header.php') ?>
-    <!-- End header -->
+
 
     <!-- Hero Start -->
     <div class="container-fluid bg-primary p-5 hero-header mb-5">
@@ -54,146 +171,106 @@
     </div>
     <!-- Hero End -->
 
-    <!-- Services us -->
+
+    
+    <!-- Services Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container justify-content-center">
-            <div class="text-center mx-auto mb-5" style="max-width: 600px">
-                <h5 class="text-primary text-uppercase" style="letter-spacing: 5px">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">
                     Services
                 </h5>
-                <h1 class="display-5 mb-0">Our Premium Pulses & Millets Offerings</h1>
+                <h1 class="display-5 mb-0">What We Offer at Pankaj Fruit And Vegetables</h1>
             </div>
             <div class="row g-5 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+
+                <!-- Fresh Produce Supply -->
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                     <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                         <div class="position-relative p-5">
-                            <i class="fas fa-box-open"></i>
-                            <h5 class="text-primary mb-0">Service</h5>
-                            <h3 class="mb-3">Custom Packaging</h3>
+                            <i class="fas fa-carrot fa-3x text-primary mb-3"></i>
+                            <h5 class="text-primary mb-0">Supply</h5>
+                            <h3 class="mb-3">Fresh Fruits & Vegetables</h3>
                             <p>
-                                We offer bulk and retail packaging options to suit your business or household needs.
+                                We provide farm-fresh onions, green chillies, and a variety of fruits and vegetables
+                                directly from Nashik.
                             </p>
                             <a href="#">Read More<i class="bi bi-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Wholesale Orders -->
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                     <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                         <div class="position-relative p-5">
-                            <i class="fas fa-store"></i>
-                            <h5 class="text-primary mb-0">Service</h5>
-                            <h3 class="mb-3">Wholesale Supply</h3>
+                            <i class="fas fa-store-alt fa-3x text-primary mb-3"></i>
+                            <h5 class="text-primary mb-0">Bulk Supply</h5>
+                            <h3 class="mb-3">Wholesale Distribution</h3>
                             <p>
-                                We supply high-grade pulses and millets to restaurants, retailers, and distributors
-                                across the region.
+                                Trusted by local retailers and businesses for bulk orders with competitive pricing and
+                                quality assurance.
                             </p>
                             <a href="#">Read More<i class="bi bi-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+
+                <!-- Delivery Service -->
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.5s">
                     <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                         <div class="position-relative p-5">
-                            <i class="fas fa-check-circle"></i>
-                            <h5 class="text-primary mb-0">Service</h5>
-                            <h3 class="mb-3">Quality Assurance</h3>
+                            <i class="fas fa-shipping-fast fa-3x text-primary mb-3"></i>
+                            <h5 class="text-primary mb-0">Logistics</h5>
+                            <h3 class="mb-3">Safe & Timely Delivery</h3>
                             <p>
-                                Our products go through strict quality checks to ensure freshness, cleanliness, and
-                                nutritional value.
+                                We ensure timely delivery of your produce with proper packaging and careful handling at
+                                every step.
                             </p>
                             <a href="#">Read More<i class="bi bi-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Flexible Payments -->
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.7s">
+                    <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                        <div class="position-relative p-5">
+                            <i class="fas fa-wallet fa-3x text-primary mb-3"></i>
+                            <h5 class="text-primary mb-0">Payments</h5>
+                            <h3 class="mb-3">Flexible Payment Options</h3>
+                            <p>
+                                We support advance, partial, and flexible payment options to make transactions
+                                convenient for all clients.
+                            </p>
+                            <a href="#">Read More<i class="bi bi-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Long-Term Plans -->
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
                     <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                         <div class="position-relative p-5">
-                            <i class="fas fa-truck"></i>
-                            <h5 class="text-primary mb-0">Logistics</h5>
-                            <h3 class="mb-3">Timely Delivery</h3>
+                            <i class="fas fa-calendar-check fa-3x text-primary mb-3"></i>
+                            <h5 class="text-primary mb-0">Subscription</h5>
+                            <h3 class="mb-3">6-Month Gold Plan</h3>
                             <p>
-                                We ensure safe and timely delivery of all orders — whether small or bulk — with proper
-                                handling.
+                                Enroll in our 6-month Gold Service for priority support, regular updates, and extended
+                                visibility on trade platforms.
                             </p>
                             <a href="#">Read More<i class="bi bi-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services us end -->
-
-    <!-- Testimonials -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="text-center mx-auto mb-5" style="max-width: 600px">
-                <h5 class="text-primary text-uppercase" style="letter-spacing: 5px">
-                    Testimonial
-                </h5>
-                <h1 class="display-5 mb-0">What People Say About Our Products</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel">
-
-                <div class="text-center pb-4">
-                    <img class="img-fluid mx-auto rounded-circle" src="img/testimonial-1.jpg"
-                        style="width: 100px; height: 100px" />
-                    <div class="testimonial-text bg-light rounded p-4 mt-n5">
-                        <p class="mt-5">
-                            "I love the quality of the millets and pulses I ordered. They are fresh, natural, and
-                            perfect for my family's health-conscious meals."
-                        </p>
-                        <h4 class="text-truncate">Noah Miller </h4>
-                        <i>Home Chef</i>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <img class="img-fluid mx-auto rounded-circle" src="img/testimonial-2.jpg"
-                        style="width: 100px; height: 100px" />
-                    <div class="testimonial-text bg-light rounded p-4 mt-n5">
-                        <p class="mt-5">
-                            "Their pulses have greatly improved the taste and nutrition in my restaurant’s dishes.
-                            Highly recommend for bulk buyers!"
-                        </p>
-                        <h4 class="text-truncate">Olivia Davis</h4>
-                        <i>Restaurant Owner</i>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <img class="img-fluid mx-auto rounded-circle" src="img/testimonial-3.jpg"
-                        style="width: 100px; height: 100px" />
-                    <div class="testimonial-text bg-light rounded p-4 mt-n5">
-                        <p class="mt-5">
-                            "Excellent packaging and quick delivery. The natural and unpolished quality of the pulses
-                            really shows in the taste."
-                        </p>
-                        <h4 class="text-truncate">Suman Roy</h4>
-                        <i>Health Enthusiast</i>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <img class="img-fluid mx-auto rounded-circle" src="img/testimonial-4.jpg"
-                        style="width: 100px; height: 100px" />
-                    <div class="testimonial-text bg-light rounded p-4 mt-n5">
-                        <p class="mt-5">
-                            "I appreciate their commitment to quality and organic products. The millets are perfect for
-                            my gluten-free diet."
-                        </p>
-                        <h4 class="text-truncate">Emily Johnson</h4>
-                        <i>Nutritionist</i>
-                    </div>
-                </div>
 
             </div>
         </div>
     </div>
-    <!-- Testimonials -->
+    <!-- Services End -->
 
-    <!-- Footer -->
+
+
+  
+    <!-- footer -->
     <?php include('footer.php') ?>
-
-    
-

@@ -88,45 +88,74 @@
             color: #0d6efd;
             border: 1px solid #0d6efd;
         }
+
+        /* blog sections css */
+        .blog-section {
+            padding: 4rem 0;
+        }
+
+        .blog-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-card-body {
+            padding: 1.5rem;
+        }
+
+        .blog-card-body h5 {
+            color: #007bff;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Fade-in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
-
-
-
 
 </head>
 
 <body>
 
-    <!-- Header -->
-    <nav
-        class="navbar navbar-expand-lg bg-white justify-content-center navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
-        <a href="index.php" class=" ms-lg-3">
-            <h3 class="m-0 text-primary">
-                Pankaj Fruit And Vegetables
-            </h3>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="" class="nav-item nav-link">About</a>
-                <a href="" class="nav-item nav-link">Service</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Product</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="" class="dropdown-item">Onion</a>
-                        <a href="" class="dropdown-item">Green chilli</a>
-                        <a href="" class="dropdown-item">Fruits</a>
-                        <a href="" class="dropdown-item">Vegetables</a>
-                    </div>
-                </div>
-                <a href="" class="nav-item nav-link">Contact</a>
-            </div>
-        </div>
-    </nav>
-    <!-- End header -->
+    <!-- header -->
+    <?php include('header.php') ?>
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
@@ -414,7 +443,7 @@
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
                             <h5 class="card-title text-primary fw-bold">Fresh Onion</h5>
-                            <a href="#" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
+                            <a href="Fresh_Onion.php" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -429,7 +458,7 @@
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
                             <h5 class="card-title text-primary fw-bold">Fresh Fruits</h5>
-                            <a href="#" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
+                            <a href="Fresh_Fruits.php" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -443,7 +472,7 @@
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
                             <h5 class="card-title text-primary fw-bold">Fresh Vegetables</h5>
-                            <a href="#" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
+                            <a href="Fresh_Vegetables.php" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -457,7 +486,7 @@
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
                             <h5 class="card-title text-primary fw-bold">Green Chilli</h5>
-                            <a href="#" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
+                            <a href="Green_Chilli.php" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -473,7 +502,7 @@
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
                             <h5 class="card-title text-primary fw-bold">Grapes</h5>
-                            <a href="#" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
+                            <a href="Grapes.php" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -488,7 +517,7 @@
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
                             <h5 class="card-title text-primary fw-bold">Pomegranate</h5>
-                            <a href="#" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
+                            <a href="Pomegranate.php" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -503,7 +532,7 @@
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
                             <h5 class="card-title text-primary fw-bold">Watermelon</h5>
-                            <a href="#" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
+                            <a href="Watermelon.php" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -518,7 +547,7 @@
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
                             <h5 class="card-title text-primary fw-bold">Tomato</h5>
-                            <a href="#" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
+                            <a href="Tomato.php" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -533,7 +562,7 @@
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
                             <h5 class="card-title text-primary fw-bold">Peru</h5>
-                            <a href="#" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
+                            <a href="Peru.php" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -547,7 +576,7 @@
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
                             <h5 class="card-title text-primary fw-bold">Papaya</h5>
-                            <a href="#" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
+                            <a href="Papaya.php" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -561,7 +590,7 @@
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
                             <h5 class="card-title text-primary fw-bold">Maize</h5>
-                            <a href="#" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
+                            <a href="Maize.php" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -667,6 +696,45 @@
     </div>
     <!-- Testimonial End -->
 
+    <!-- Featured Blog Posts Section -->
+    <section class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Featured Posts</h2>
+            <div class="row g-4">
+                <div class="col-md-4 fade-in">
+                    <div class="blog-card">
+                        <img src="img/fruits.webp" alt="Fresh Fruits">
+                        <div class="blog-card-body">
+                            <h5>5 Health Benefits of Eating Fresh Fruits</h5>
+                            <p>Boost immunity, improve digestion, and enjoy delicious flavors with fresh fruits delivered to your home.</p>
+                            <a href="contact.php" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in" style="animation-delay: 0.2s;">
+                    <div class="blog-card">
+                        <img src="img/pomegranate.jpg" alt="Fresh Vegetables">
+                        <div class="blog-card-body">
+                            <h5>Top 5 Seasonal Vegetables to Include in Your Diet</h5>
+                            <p>Seasonal vegetables taste better, are more nutritious, and are perfect for your healthy meals.</p>
+                            <a href="contact.php" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in" style="animation-delay: 0.4s;">
+                    <div class="blog-card">
+                        <img src="img/Tomato.webp" alt="Healthy Recipes">
+                        <div class="blog-card-body">
+                            <h5>Delicious Recipes Using Fresh Produce</h5>
+                            <p>From smoothies to salads to vegetable stir-fries, enjoy healthy meals every day.</p>
+                            <a href="contact.php" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
@@ -736,106 +804,7 @@
             </div>
         </div>
     </div>
-
     <!-- Contact End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light mt-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container pt-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Pankaj Fruit And Vegetables</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <p>
-                            Pankaj Fruit And Vegetables is your trusted partner in fresh and quality fruits, vegetables,
-                            millets, and pulses sourced directly from trusted farmers and agricultural markets.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Popular Links</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About
-                            Us</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our
-                            Products</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
-                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p class="mb-2">
-                        <i class="bi bi-geo-alt text-primary me-2"></i>Plot No. 15, Nashik Agricultural Market,
-                        Maharashtra, India - 422001
-                    </p>
-                    <p class="mb-2">
-                        <i class="bi bi-envelope-open text-primary me-2"></i>pankajfruitsveggies@gmail.com
-                    </p>
-                    <p class="mb-0">
-                        <i class="bi bi-telephone text-primary me-2"></i>+91 9876543210
-                    </p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Follow Us</h3>
-                    <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
-                                class="fab fa-twitter fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
-                                class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i
-                                class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i
-                                class="fab fa-instagram fw-normal"></i></a>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <form class="mx-auto" style="max-width: 600px">
-                        <div class="input-group">
-                            <input type="email" class="form-control border-white p-3" placeholder="Your Email" />
-                            <button class="btn btn-primary px-4">Sign Up</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-primary text-light py-4">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">
-                        &copy;
-                        <a class="text-white border-bottom" href="#">Pankaj Fruit And Vegetables</a>.
-                        All Rights Reserved.
-                    </p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">
-                        Designed by
-                        <a class="text-white border-bottom" href="https://trade4export.com">Trade4Export</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer End -->
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+    <!-- footer -->
+    <?php include('footer.php') ?>
