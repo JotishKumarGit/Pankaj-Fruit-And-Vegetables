@@ -174,7 +174,7 @@
     <!-- Featured Blog Posts Section -->
     <section class="blog-section">
         <div class="container">
-            <h2 class="section-title">Featured Posts</h2>
+            <h2 class="section-title">Our Blogs</h2>
             <div class="row g-4">
                 <div class="col-md-4 fade-in">
                     <div class="blog-card">
