@@ -178,7 +178,7 @@
             <!-- Product Image -->
             <div class="col-md-6">
                 <div class="product-image p-3 shadow-sm rounded bg-white">
-                    <img src="img/green_chilli.jpg" height="auto" width="100%" alt="Fresh Green Chilli" class="img-fluid rounded">
+                    <img src="img/Green_Chilli.jpeg" height="auto" width="100%" alt="Fresh Green Chilli" class="img-fluid rounded">
                 </div>
             </div>
 

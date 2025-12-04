@@ -178,7 +178,7 @@
             <!-- Product Image -->
             <div class="col-md-6">
                 <div class="product-image p-3 shadow-sm rounded bg-white">
-                    <img src="img/watermelon.webp" height="auto" width="100%" alt="Watermelon" class="img-fluid rounded">
+                    <img src="img/Watermelon.jpg" height="auto" width="100%" alt="Watermelon" class="img-fluid rounded">
                 </div>
             </div>
 

@@ -194,7 +194,7 @@
 
                 <!-- Slide 2 -->
                 <div class="carousel-item">
-                    <img class="w-100" src="img/vegetables.webp"
+                    <img class="w-100" src="img/Vegetables.jpg"
                         alt="Fresh organic vegetables showcasing healthy and wholesome millets" />
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px; height: 500px;">
@@ -212,7 +212,7 @@
 
                 <!-- Slide 3 -->
                 <div class="carousel-item">
-                    <img class="w-100" src="img/green_chilli.jpg"
+                    <img class="w-100" src="img/Green_Chilli.jpeg"
                         alt="Close-up of fresh green chillies representing sustainably sourced pulses" />
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px; height: 500px;">
@@ -438,7 +438,7 @@
                     <div class="card product-card border-0 shadow h-100 overflow-hidden">
                         <!-- Product Image -->
                         <div class="product-img-container position-relative overflow-hidden">
-                            <img src="img/onion_img.jpg" class="card-img-top product-img" alt="Fresh Onion">
+                            <img src="img/Onion.jpg" class="card-img-top product-img" alt="Fresh Onion">
                         </div>
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
@@ -467,7 +467,7 @@
                     <div class="card product-card border-0 shadow h-100 overflow-hidden">
                         <!-- Product Image -->
                         <div class="product-img-container position-relative overflow-hidden">
-                            <img src="img/vegetables.webp" class="card-img-top product-img" alt="Fresh Onion">
+                            <img src="img/Vegetables.jpg" class="card-img-top product-img" alt="Fresh Onion">
                         </div>
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
@@ -481,7 +481,7 @@
                     <div class="card product-card border-0 shadow h-100 overflow-hidden">
                         <!-- Product Image -->
                         <div class="product-img-container position-relative overflow-hidden">
-                            <img src="img/green_chilli.jpg" class="card-img-top product-img" alt="Fresh Onion">
+                            <img src="img/Green_Chilli.jpeg" class="card-img-top product-img" alt="Fresh Onion">
                         </div>
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
@@ -527,7 +527,7 @@
                     <div class="card product-card border-0 shadow h-100 overflow-hidden">
                         <!-- Product Image -->
                         <div class="product-img-container position-relative overflow-hidden">
-                            <img src="img/watermelon.webp" class="card-img-top product-img" alt="Fresh Onion">
+                            <img src="img/Watermelon.jpg" class="card-img-top product-img" alt="Fresh Onion">
                         </div>
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
@@ -561,7 +561,7 @@
                         </div>
                         <!-- Card Body -->
                         <div class="card-body text-center bg-light">
-                            <h5 class="card-title text-primary fw-bold">Peru</h5>
+                            <h5 class="card-title text-primary fw-bold">Guava (Peru) </h5>
                             <a href="Peru.php" class="btn btn-primary px-4 py-2 mt-2 animated-btn">View Details</a>
                         </div>
                     </div>
